@@ -4,6 +4,26 @@ Global Scope */
 
 let userId = null;
 
+// Queremos pasar a REACT este elemento (DOM NORMAL)
+const root = document.querySelector('#root');
+
+
+// Conectamos el virtual DOM y vamos a usar React (VIRTUAL DOM)
+const virtualRoot = ReactDOM.createRoot(root);
+
+// Creamos un h1 en React
+const title = React.createElement('h1', null, 'Hola mundo desde el virtual root de React * ');
+
+virtualRoot.render(title);
+
+
+
+
+
+
+
+
+
 /* 
 <main class="register-view">
       <h1>Register</h1>
