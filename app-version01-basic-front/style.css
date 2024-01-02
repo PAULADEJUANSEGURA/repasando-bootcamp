@@ -17,9 +17,17 @@ body {
 
 /* styles (BEM) */
 
+.register-view{
+    margin: 50px;
+}
+
 .register-form {
     display: flex;
     flex-direction: column;
+}
+
+.login-view{
+    margin: 50px;
 }
 
 .login-form {
