@@ -11,18 +11,15 @@ const root = document.querySelector('#root');
 // Conectamos el virtual DOM y vamos a usar React (VIRTUAL DOM)
 const virtualRoot = ReactDOM.createRoot(root);
 
-// Creamos un h1 en React
+// Creamos un h1 en React en el VIRTUAL DOM
 const title = React.createElement('h1', null, 'Hola mundo desde el virtual root de React * ');
 
-virtualRoot.render(title);
+const color1 = React.createElement('li', null, 'Red'); 
+const color2 = React.createElement('li', null, 'Blue');
 
+const colors = React.createElement('ul', null, color1, color2);
 
-
-
-
-
-
-
+virtualRoot.render([title, colors]);
 
 /* 
 <main class="register-view">
