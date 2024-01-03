@@ -1,5 +1,5 @@
 function Login (){
-    return <main className="login-view off">
+    return <main className="login-view">
       <h1>Login</h1>
       <form action="submit" className="login-form">
         <label htmlFor="login-email" type="text">Email</label>

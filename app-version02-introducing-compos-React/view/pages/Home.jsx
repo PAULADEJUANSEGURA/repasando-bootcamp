@@ -1,5 +1,5 @@
 function Home (){
-    return <div className="home-view off">
+    return <div className="home-view">
       <header>
         <h1 className="home-title">Hello, Home!</h1>
         <button className="home-logout-button">Logout</button>
