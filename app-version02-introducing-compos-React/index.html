@@ -22,13 +22,19 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
   <!-- Convertimos el main.js en el inicio de React -->
-  <script src="main.jsx" type="text/babel"></script>
-    
+  <!-- capa de presentacion -->
+  <script src="view/pages/Home.jsx" type="text/babel"></script>
+  <script src="view/pages/Login.jsx" type="text/babel"></script>
+  <script src="view/pages/Register.jsx" type="text/babel"></script>
+  <script src="view/App.jsx" type="text/babel"></script> 
+  <script src="Main.jsx" type="text/babel"></script>
+  
 
-<!-- Comentamos todos los otros Scripts
+  <!-- capa de datos -->
     <script src="data/users.js"></script>
     <script src="data/posts.js"></script>
-
+  
+  <!-- capa de logica -->
     <script src="logic/authenticateUser.js"></script>
     <script src="logic/registerUser.js"></script>
     <script src="logic/retrieveUser.js"></script>
@@ -36,12 +42,6 @@
     <script src="logic/retrievePosts.js"></script>
     <script src="logic/updatePost.js"></script>
     <script src="logic/deletePost.js"></script>
-
-    <script src="view/helpers.js"></script>
-    <script src="view/register.js"></script>
-    <script src="view/login.js"></script>
-    <script src="view/home.js"></script>
--->
 
   </body>
 </html>
