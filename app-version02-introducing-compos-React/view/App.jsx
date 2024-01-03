@@ -1,3 +1,3 @@
 function App(){
-    return <Login />
+    return <Register />
 }

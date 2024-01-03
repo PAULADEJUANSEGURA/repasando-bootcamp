@@ -1,6 +1,5 @@
 function Register() {
-    return 
-        <main className="register-view">
+    return <main className="register-view">
             <h1>Register</h1>
             <form action="submit" className="register-form">
                 <label htmlFor="register-name">Name</label>
