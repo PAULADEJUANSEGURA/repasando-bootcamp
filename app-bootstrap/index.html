@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paula Web-Developer</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbars/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbars/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-personalized-color">
+  <!-- nav bar de bootstrap -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-personalized-color">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="logo-simbolo.png" width="45" height="45" class="d-inline-block align-top" alt="Bootstrap" loading="lazy">
@@ -48,6 +52,7 @@
           </div>
         </div>
       </nav>
+
       <!-- Section: Design Block -->
 <section class="text-center text-lg-start">
     <style>
@@ -63,6 +68,7 @@
     </style>
   
     <!-- Jumbotron -->
+    <!-- Register view -->
     <div class="container py-4 register-view">
       <div class="row g-0 align-items-center">
         <div class="col-lg-6 mb-5 mb-lg-0">
@@ -72,18 +78,19 @@
               ">
             <div class="card-body p-5 shadow-5 text-center">
               <h2 class="fw-bold mb-5">Sign up now</h2>
-              <form class="register-form">
+              <!-- formulario del register -->
+              <form action="submit" class="register-form">
                 <!-- 2 column grid layout with text inputs for the first and last names -->
                 <div class="row">
                   <div class="col-md-6 mb-4">
                     <div class="form-outline">
-                      <input type="text" id="name" class="form-control" />
+                      <input type="text" id="register-name" class="form-control" />
                       <label class="form-label" for="form3Example1">First name</label>
                     </div>
                   </div>
                   <div class="col-md-6 mb-4">
                     <div class="form-outline">
-                      <input type="text" id="lastName" class="form-control" />
+                      <input type="text" id="register-lastName" class="form-control" />
                       <label class="form-label" for="form3Example2">Last name</label>
                     </div>
                   </div>
@@ -91,19 +98,19 @@
   
                 <!-- Email input -->
                 <div class="form-outline mb-4">
-                  <input type="email" id="email" class="form-control" />
+                  <input type="email" id="register-email" class="form-control" />
                   <label class="form-label" for="form3Example3">Email address</label>
                 </div>
   
                 <!-- Password input -->
                 <div class="form-outline mb-4">
-                  <input type="password" id="password" class="form-control" />
+                  <input type="password" id="register-password" class="form-control" />
                   <label class="form-label" for="form3Example4">Password</label>
                 </div>
   
                 <!-- Checkbox -->
                 <div class="form-check d-flex justify-content-center mb-4">
-                  <input class="form-check-input me-2" type="checkbox" value="" id="subscribe" checked />
+                  <input class="form-check-input me-2" type="checkbox" value="" id="register-subscribe" checked />
                   <label class="form-check-label" for="form2Example33">
                     Subscribe to our newsletter
                   </label>
@@ -205,9 +212,24 @@
         <h1>Hello, Home!</h1>
         
     </main>
-      <script src="main.js"></script>  
+   <!-- Script necesario para BOOTSTRAP -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   <!-- Scripts necesarios para funcionamiento -->
+    <script src="data/users.js"></script>
+    <script src="data/posts.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <script src="logic/authenticateUser.js"></script>
+    <script src="logic/registerUser.js"></script>
+    <script src="logic/retrieveUser.js"></script>
+    <script src="logic/createPost.js"></script>
+    <script src="logic/retrievePosts.js"></script>
+    <script src="logic/updatePost.js"></script>
+    <script src="logic/deletePost.js"></script>
+
+    <script src="view/helpers.js"></script>
+    <script src="view/register.js"></script>
+    <script src="view/login.js"></script>
+    <script src="view/home.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
