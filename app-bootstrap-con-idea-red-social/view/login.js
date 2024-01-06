@@ -28,11 +28,12 @@ loginForm.onsubmit = function (event) {
             
             var homeTitle = homeView.querySelector('.home-title');            
 
-            homeTitle.innerText = 'Hello ' + user.name + '!';
+            homeTitle.innerText = 'Hola ' + user.name + '!';
 
             renderPosts()
         }
             homeView.classList.remove('off')
+            navbarView.classList.add('off')
         }
     }
 
