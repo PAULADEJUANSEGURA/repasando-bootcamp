@@ -1,17 +1,19 @@
-/*const navbarView = document.querySelector('.navbar-view')
+const navbarView = document.querySelector('.navbar-view');
+const loginView = document.querySelector('.login-view');
+const registerView = document.querySelector('.register-view');
 
-const registerLoginLink = navbarView.querySelector('.register-login-link')
+const navbarRegisterLink = navbarView.querySelector('.register-link');
 
-registerLoginLink.onclick = function (event){
-    event.preventDefault()
-    loginView.classList.remove('off') 
-    registerView.classList.add('off')
+navbarRegisterLink.onclick = function (event){
+    event.preventDefault();
+    registerView.classList.remove('off');
+    loginView.classList.add('off');
 }
 
-const loginRegisterLink = navbarView.querySelector('.login-register-link')
+const navbarLoginLink = navbarView.querySelector('.login-link')
 
-loginRegisterLink.onclick = function (event) {
-    event.preventDefault()
-    loginView.classList.add('off')
-    registerView.classList.remove('off')
-}*/
+navbarLoginLink.onclick = function (event){
+    event.preventDefault();
+    loginView.classList.remove('off');
+    registerView.classList.add('off');
+}
