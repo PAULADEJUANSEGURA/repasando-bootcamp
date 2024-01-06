@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Everest</title>
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbars/">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbars/">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-    <link href="style.css" rel="stylesheet">
-    <link href="style-homeview.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Everest</title>
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbars/">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbars/">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+  <link href="style.css" rel="stylesheet">
+  <link href="style-homeview.css" rel="stylesheet">
 </head>
+
 <body>
-   <!-- nav bar de bootstrap -->
-   <div class="navbar-view">
-   <nav class="navbar navbar-expand-lg navbar-dark bg-personalized-color">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-personalized-color navbar-view">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="everest-logo-mountain.png" width="90" height="90" class="d-inline-block align-top" alt="Bootstrap" loading="lazy">
+        <img src="everest-logo-mountain.png" width="90" height="90" class="d-inline-block align-top" alt="Bootstrap"
+          loading="lazy">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent2"
+        aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent2">
@@ -30,7 +33,8 @@
             <h2>Everest</h2>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
               Menú
             </a>
             <ul class="dropdown-menu">
@@ -46,245 +50,240 @@
       </div>
     </div>
   </nav>
-</div>
-    <!-- Register view -->  
-    <!-- Section: Design Block -->
+
+  <section class="register-view off">
     <section class="text-center text-lg-start">
-    <style>
-      .cascading-right {
-        margin-right: -50px;
-      }
-  
-      @media (max-width: 991.98px) {
+      <style>
         .cascading-right {
-          margin-right: 0;
+          margin-right: -50px;
         }
-      }
-    </style>
-  
-   <!-- Register view -->
-    <div class="container py-4 register-view off">
-      <div class="row g-0 align-items-center">
-        <div class="col-lg-6 mb-5 mb-lg-0">
-          <div class="card cascading-right" style="
+
+        @media (max-width: 991.98px) {
+          .cascading-right {
+            margin-right: 0;
+          }
+        }
+      </style>
+      <div class="container py-4">
+        <div class="row g-0 align-items-center">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <div class="card cascading-right" style="
               width: 500px;
               background: hsla(0, 0%, 100%, 0.55);
               backdrop-filter: blur(30px);
               border-radius: 1rem;
               ">
-            <div class="card-body p-5 shadow-5 text-center">
-              <h2 class="fw-bold mb-5">Si estuviste allí...</h2>
-              <h2 class="fw-bold mb-5">Crea una cuenta en Everest</h2>
-              <!-- formulario del register -->
-              <form action="submit" class="register-form">
-                <!-- 2 column grid layout with text inputs for the first and last names -->
-                <div class="row">
-                  <div class="col-md-6 mb-4">
-                    <div class="form-outline">
-                      <input type="text" id="register-name" class="form-control" />
-                      <label class="form-label" for="form3Example1">Nombre</label>
+              <div class="card-body p-5 shadow-5 text-center">
+                <h2 class="fw-bold mb-5">Si estuviste allí...</h2>
+                <h2 class="fw-bold mb-5">Crea una cuenta en Everest</h2>
+                <!-- formulario del register -->
+                <form action="submit" class="register-form">
+                  <!-- 2 column grid layout with text inputs for the first and last names -->
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <input type="text" id="register-name" class="form-control" />
+                        <label class="form-label" for="form3Example1">Nombre</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <input type="text" id="register-lastName" class="form-control" />
+                        <label class="form-label" for="form3Example2">Apellidos</label>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-md-6 mb-4">
-                    <div class="form-outline">
-                      <input type="text" id="register-lastName" class="form-control" />
-                      <label class="form-label" for="form3Example2">Apellidos</label>
-                    </div>
+
+                  <!-- Email input -->
+                  <div class="form-outline mb-4">
+                    <input type="email" id="register-email" class="form-control" />
+                    <label class="form-label" for="form3Example3">Correo electrónico</label>
                   </div>
-                </div>
-  
-                <!-- Email input -->
-                <div class="form-outline mb-4">
-                  <input type="email" id="register-email" class="form-control" />
-                  <label class="form-label" for="form3Example3">Correo electrónico</label>
-                </div>
-  
-                <!-- Password input -->
-                <div class="form-outline mb-4">
-                  <input type="password" id="register-password" class="form-control" />
-                  <label class="form-label" for="form3Example4">Contraseña</label>
-                </div>
-  
-                <!-- Checkbox -->
-                <div class="form-check d-flex justify-content-center mb-4">
-                  <input class="form-check-input me-2" type="checkbox" value="" id="register-subscribe" checked />
-                  <label class="form-check-label" for="form2Example33">
-                    Suscríbete a nuestro newsletter
-                  </label>
-                </div>
-  
-                <!-- Submit button -->
-                <button type="submit" class="btn btn-primary btn-block mb-4">
-                  Regístrate
-                </button>
-  
-                <!-- Ir a LOGIN -->
-                <div class="text-center">
-                  <h6>Si ya tienes cuenta creada</h6> 
-                  <h6><a class="register-login-link" href="">Login</a></h6>
-                </div>
-              </form>
+
+                  <!-- Password input -->
+                  <div class="form-outline mb-4">
+                    <input type="password" id="register-password" class="form-control" />
+                    <label class="form-label" for="form3Example4">Contraseña</label>
+                  </div>
+
+                  <!-- Checkbox -->
+                  <div class="form-check d-flex justify-content-center mb-4">
+                    <input class="form-check-input me-2" type="checkbox" value="" id="register-subscribe" checked />
+                    <label class="form-check-label" for="form2Example33">
+                      Suscríbete a nuestro newsletter
+                    </label>
+                  </div>
+
+                  <!-- Submit button -->
+                  <button type="submit" class="btn btn-primary btn-block mb-4">
+                    Regístrate
+                  </button>
+
+                  <!-- Ir a LOGIN -->
+                  <div class="text-center">
+                    <h6>Si ya tienes cuenta creada</h6>
+                    <h6><a class="register-login-link" href="">Login</a></h6>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
-        </div>
-  
-        <div class="col-lg-6 mb-5 mb-lg-0">
-          <img src="foto-portada-register.png" width="500px" class="rounded-4 shadow-4"
-            alt="" />
+
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <img src="foto-portada-register.png" width="500px" class="rounded-4 shadow-4" alt="" />
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   </section>
-  
-
-    <!--Login view -->
-    <!-- Section: Design Block -->
-    <section class="text-center text-lg-start">
-    <style>
-    .cascading-right {
-      margin-right: -50px;
-    }
-
-    @media (max-width: 991.98px) {
-      .cascading-right {
-        margin-right: 0;
-      }
-    }
-  </style>
   <!--Login view -->
-    <div class="container py-4 login-view">
-      <div class="row g-0 align-items-center">
-        <div class="col-lg-6 mb-5 mb-lg-0">
-          <div class="card cascading-right" style="
+  <section class="login-view">
+   <section class="text-center text-lg-start">
+      <style>
+        .cascading-right {
+          margin-right: -50px;
+        }
+
+        @media (max-width: 991.98px) {
+          .cascading-right {
+            margin-right: 0;
+          }
+        }
+      </style>
+      <div class="container py-4">
+        <div class="row g-0 align-items-center">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <div class="card cascading-right" style="
               width: 500px;
               background: hsla(0, 0%, 100%, 0.55);
               backdrop-filter: blur(30px);
               border-radius: 1rem;
               ">
-            <div class="card-body p-5 shadow-5 text-center">
-              <h2 class="fw-bold mb-5">Si estuviste allí...</h2>
-              <h2 class="fw-bold mb-5">Accede a tu cuenta de Everest</h2>
-              <!-- formulario del login -->
-              <form class="login-form" action="submit">
-      
-                <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Entra en tu cuenta</h5>
+              <div class="card-body p-5 shadow-5 text-center">
+                <h2 class="fw-bold mb-5">Si estuviste allí...</h2>
+                <h2 class="fw-bold mb-5">Accede a tu cuenta de Everest</h2>
+                <!-- formulario del login -->
+                <form class="login-form" action="submit">
 
-                <div class="form-outline mb-4">
-                  <input type="email" id="login-email" class="form-control form-control-lg" />
-                  <label class="form-label" for="form2Example17">Correo electrónico</label>
-                </div>
+                  <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Entra en tu cuenta</h5>
 
-                <div class="form-outline mb-4">
-                  <input type="password" id="login-password" class="form-control form-control-lg" />
-                  <label class="form-label" for="form2Example27">Contraseña</label>
-                </div>
-              <!-- Button submit Login--> 
-              <div class="pt-1 mb-4">
-                <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Haz click aquí:</h5>
-                <button type="submit" class="btn btn-primary btn-block mb-4">
-                  Login
-                </button>
-              </div>                                            
-               <!-- Link a pagina de Register-->
-                <div class="text-center">
-                  <h6>Si no tienes cuenta creada</h6>
-                  <h6><a class="login-register-link" href="">Regístrate</a></h6>
-                </div>
+                  <div class="form-outline mb-4">
+                    <input type="email" id="login-email" class="form-control form-control-lg" />
+                    <label class="form-label" for="form2Example17">Correo electrónico</label>
+                  </div>
 
-              </form>
+                  <div class="form-outline mb-4">
+                    <input type="password" id="login-password" class="form-control form-control-lg" />
+                    <label class="form-label" for="form2Example27">Contraseña</label>
+                  </div>
+                  <!-- Button submit Login-->
+                  <div class="pt-1 mb-4">
+                    <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Haz click aquí:</h5>
+                    <button type="submit" class="btn btn-primary btn-block mb-4">
+                      Login
+                    </button>
+                  </div>
+                  <!-- Link a pagina de Register-->
+                  <!-- Ir a REGISTER -->
+                  <div class="text-center">
+                    <h6>Si no tienes cuenta creada</h6>
+                    <h6><a class="login-register-link" href="">Regístrate</a></h6>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
-        </div>
-  
-        <div class="col-lg-6 mb-5 mb-lg-0">
-          <img src="yo-estuve-aqui-everest.jpg" width="500px" class="rounded-4 shadow-4"
-            alt="" />
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <img src="yo-estuve-aqui-everest.jpg" width="500px" class="rounded-4 shadow-4" alt="" />
+          </div>
         </div>
       </div>
-    </div>
-    <!-- Jumbotron -->
+    </section>
   </section>
 
   <!-- HOME VIEW -->
   <main class="home-view off">
-          <header class="home-header">
-            <h1 class="home-title">Hola, Home!</h1>
-            <button class="home-logout-button">Logout</button>
-          </header>
-    
-          <main class="home-main">
-            <section class="home-posts"></section>
-          </main>
-    
-          <footer class="home-footer">
-            <button class="home-create-post-button">+</button>
-          </footer>
-          <div class="home-create-post-modal off">
-            <div class="home-create-post-container">
-              <h2>Create post</h2>
-              <form class="home-create-post-form">
-                <label for="create-post-url">Image</label>
-                <input id="create-post-url" type="url" />
-    
-                <label for="create-post-text">Text</label>
-                <textarea id="create-post-text"></textarea>
-    
-                <button type="submit">Create</button>
-                <button class="home-create-post-cancel-button">Cancel</button>
-              </form>
-            </div>
-          </div>
-      
-          <div class="home-edit-post-modal off">
-            <div class="home-edit-post-container">
-              <h2>Edit post</h2>
-              <form class="home-edit-post-form">
-                <input type="hidden" id="edit-post-id">
-    
-                <label for="edit-post-url">Image</label>
-                <input id="edit-post-url" type="url" />
-    
-                <label for="edit-post-text">Text</label>
-                <textarea id="edit-post-text"></textarea>
-    
-                <button type="submit">Save changes</button>
-                <button class="home-edit-post-cancel-button">Cancel</button>
-              </form>
-            </div>
-          </div>
-    
-          <div class="home-delete-post-modal off">
-            <div class="home-delete-post-container">
-              <h2>Delete post</h2>
-              <form class="home-delete-post-form">
-    
-                <input type="hidden" id="delete-post-id">
-    
-                <button type="submit">Delete</button>
-                <button class="home-delete-post-cancel-button">Cancel</button>
-              </form>
-            </div>
-          </div>  
+    <header class="home-header">
+      <h1 class="home-title">Hola, Home!</h1>
+      <button class="home-logout-button">Logout</button>
+    </header>
+
+    <main class="home-main">
+      <section class="home-posts"></section>
     </main>
-   <!-- Script necesario para BOOTSTRAP -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-   <!-- Scripts necesarios para funcionamiento -->
-    <script src="data/users.js"></script>
-    <script src="data/posts.js"></script>
 
-    <script src="logic/authenticateUser.js"></script>
-    <script src="logic/registerUser.js"></script>
-    <script src="logic/retrieveUser.js"></script>
-    <script src="logic/createPost.js"></script>
-    <script src="logic/retrievePosts.js"></script>
-    <script src="logic/updatePost.js"></script>
-    <script src="logic/deletePost.js"></script>
+    <footer class="home-footer">
+      <button class="home-create-post-button">+</button>
+    </footer>
+    <div class="home-create-post-modal off">
+      <div class="home-create-post-container">
+        <h2>Create post</h2>
+        <form class="home-create-post-form">
+          <label for="create-post-url">Image</label>
+          <input id="create-post-url" type="url" />
 
-    <script src="view/helpers.js"></script>
-    <script src="view/navbar.js"></script>
-    <script src="view/register.js"></script>
-    <script src="view/login.js"></script>
-    <script src="view/home.js"></script>
-    <script src="main.js"></script>
+          <label for="create-post-text">Text</label>
+          <textarea id="create-post-text"></textarea>
+
+          <button type="submit">Create</button>
+          <button class="home-create-post-cancel-button">Cancel</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="home-edit-post-modal off">
+      <div class="home-edit-post-container">
+        <h2>Edit post</h2>
+        <form class="home-edit-post-form">
+          <input type="hidden" id="edit-post-id">
+
+          <label for="edit-post-url">Image</label>
+          <input id="edit-post-url" type="url" />
+
+          <label for="edit-post-text">Text</label>
+          <textarea id="edit-post-text"></textarea>
+
+          <button type="submit">Save changes</button>
+          <button class="home-edit-post-cancel-button">Cancel</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="home-delete-post-modal off">
+      <div class="home-delete-post-container">
+        <h2>Delete post</h2>
+        <form class="home-delete-post-form">
+
+          <input type="hidden" id="delete-post-id">
+
+          <button type="submit">Delete</button>
+          <button class="home-delete-post-cancel-button">Cancel</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <!-- Script necesario para BOOTSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <!-- Scripts necesarios para funcionamiento -->
+  <script src="data/users.js"></script>
+  <script src="data/posts.js"></script>
+
+  <script src="logic/authenticateUser.js"></script>
+  <script src="logic/registerUser.js"></script>
+  <script src="logic/retrieveUser.js"></script>
+  <script src="logic/createPost.js"></script>
+  <script src="logic/retrievePosts.js"></script>
+  <script src="logic/updatePost.js"></script>
+  <script src="logic/deletePost.js"></script>
+
+  <script src="view/helpers.js"></script>
+  <script src="view/register.js"></script>
+  <script src="view/login.js"></script>
+  <script src="view/home.js"></script>
+  <script src="view/navbar.js"></script>
+  <script src="main.js"></script>
 </body>
+
 </html>

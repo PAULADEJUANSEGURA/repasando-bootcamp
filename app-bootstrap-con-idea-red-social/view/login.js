@@ -28,7 +28,7 @@ loginForm.onsubmit = function (event) {
             
             var homeTitle = homeView.querySelector('.home-title');            
 
-            homeTitle.innerText = 'Hola ' + user.name + '!';
+            homeTitle.innerText = 'Hello ' + user.name + '!';
 
             renderPosts()
         }

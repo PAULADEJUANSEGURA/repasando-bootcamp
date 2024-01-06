@@ -1,6 +1,5 @@
 const navbarView = document.querySelector('.navbar-view');
-const loginView = document.querySelector('.login-view');
-const registerView = document.querySelector('.register-view');
+
 
 const navbarRegisterLink = navbarView.querySelector('.register-link');
 
