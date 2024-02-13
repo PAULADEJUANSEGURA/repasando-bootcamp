@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './logo_react-facilito.png';
 import './App.css';
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          React en pruebas fácil para todos por PAULA DE JUAN SEGURA
         </p>
         <a
           className="App-link"
@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Aprende con Israel Parra y la web de CursosDesarrolloWeb un poquito de React
         </a>
       </header>
     </div>
