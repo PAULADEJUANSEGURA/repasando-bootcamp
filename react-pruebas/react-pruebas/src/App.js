@@ -9,14 +9,6 @@ function App() {
         <p>
           React en pruebas fácil para todos por PAULA DE JUAN SEGURA
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Aprende con Israel Parra y la web de CursosDesarrolloWeb un poquito de React
-        </a>
       </header>
     </div>
   );
